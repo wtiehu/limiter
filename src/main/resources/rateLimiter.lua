@@ -12,7 +12,7 @@ local val = redis.call('incr',key);
 ---第一次
 if val == 1 then
     ---设置key的60秒有效期
-    redis.call('ecpire',key,tonumber(expire));
+    redis.call('expire',key,tonumber(expire));
     return 1;
 end
 ---判断次数是否达到阈值，10，就要进行限制
