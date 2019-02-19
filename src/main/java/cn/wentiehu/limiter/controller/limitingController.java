@@ -1,6 +1,6 @@
 package cn.wentiehu.limiter.controller;
 
-import cn.wentiehu.limiter.Isacquire;
+import cn.wentiehu.limiter.utils.Isacquire;
 import com.google.common.util.concurrent.RateLimiter;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -48,7 +48,7 @@ public class limitingController {
             System.out.println("处理时间："+format.format(new Date())+",业务处理-------"+str);
             return "分布式请求操作成功";
         }else {
-            System.out.println("对不起，你的请求被限制了！");
+            System.out.println("对不起，你的分布式请求被限制了！");
             return "对不起，你的分布式请求被限制了！";
         }
     }

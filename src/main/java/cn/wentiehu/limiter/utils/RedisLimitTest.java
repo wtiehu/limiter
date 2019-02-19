@@ -1,4 +1,4 @@
-package cn.wentiehu.limiter;
+package cn.wentiehu.limiter.utils;
 
 import redis.clients.jedis.Jedis;
 

@@ -1,4 +1,4 @@
-package cn.wentiehu.limiter;
+package cn.wentiehu.limiter.utils;
 
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.data.redis.core.script.DefaultRedisScript;
